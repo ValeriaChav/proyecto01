@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Mundo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        .container {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        button {
+            background-color: #ff7eb3;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff4f9a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mi Mundo 🌎</h1>
+    <p>Un espacio personal con estilo moderno</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Sobre mí</h2>
+        <p>Me gusta la tecnología, la música y aprender cosas nuevas todos los días.</p>
+    </div>
+
+    <div class="card">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Escuchar música 🎧</li>
+            <li>Ver series 🎬</li>
+            <li>Videojuegos 🎮</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Frase favorita</h2>
+        <p>"Hazlo con miedo, pero hazlo."</p>
+    </div>
+
+    <div class="card">
+        <h2>Interacción</h2>
+        <p>Presiona el botón 👇</p>
+        <button onclick="saludo()">Click aquí</button>
+    </div>
+
+    <div class="card">
+        <h2>Imagen</h2>
+        <img src="https://via.placeholder.com/300" style="width:100%; border-radius:10px;">
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Mi Página Personal</p>
+</footer>
+
+<script>
+    function saludo() {
+        alert("¡Bienvenido a mi página! 😄");
+    }
+</script>
+
+</body>
+</html>
